@@ -1,5 +1,4 @@
-===============
-try rst include
-===============
+# readme from top level
 
-.. include:: ../README.md
+```{include} ../README.md
+```
