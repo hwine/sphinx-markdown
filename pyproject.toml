@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "sphinx-markdown"
+version = "0.1.0"
+description = ""
+authors = ["Hal Wine <hwine@mozilla.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+sphinx = "^3.2.1"
+recommonmark = "^0.6.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
