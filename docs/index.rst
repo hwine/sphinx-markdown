@@ -6,12 +6,15 @@
 Welcome to sphinx-markdown's documentation!
 ===========================================
 
+Let's see how much of a commit change this makes for.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    README.md from above <readme.md>
-   test.md
+   Normal Markdown      <test-md.md>
+   Normal rST           <test-rst.rst>
 
 
 
