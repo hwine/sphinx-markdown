@@ -23,13 +23,15 @@ repos:
     rev: v2.7.2
     hooks:
     -   id: pyupgrade
-        args: ["--py36-plus"]
+        args: ["--py38-plus"]
 
 - repo: https://github.com/jumanjihouse/pre-commit-hooks
   rev: master  # or specific git tag
   hooks:
     - id: forbid-binary
-    - id: markdownlint # Configure in .mdlrc
+    - id: markdownlint
+      # Configure via args per https://github.com/markdownlint/markdownlint/blob/master/docs/configuration.md
+      args: ['--rules', '~MD012,~MD013,~MD031,~MD032,~MD036' ]
     - id: shellcheck
 
 - repo: https://github.com/IamTheFij/docker-pre-commit
@@ -60,4 +62,4 @@ repos:
   hooks:
     - id: detect-secrets
       args: ['--baseline', '.secrets.baseline']
-      exclude: .*/tests/.*
+      exclude: ^((.*/tests/.*)|(.*\.lock)$)

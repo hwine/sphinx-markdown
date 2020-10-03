@@ -32,7 +32,7 @@ release = "0.1.0"
 # ones.
 extensions = [
     "sphinx.ext.githubpages",
-    "recommonmark",
+    "myst_parser",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
